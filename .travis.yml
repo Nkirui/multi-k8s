@@ -21,11 +21,7 @@ before_install:
 script :
   - docker run nkirui2030/react-test npm test -- --coverage
 
-deploy :
-  provider: script
-  script: bash ./deploy.sh
-on :
-  branch : master
+
 
 
 
