@@ -1,6 +1,6 @@
-docker build -t nkirui2030/multi-client:latest -f nkirui2030/multi-client:$SHA -f  ./client/docker ./client
-docker build -t nkirui2030/multi-server:latest -f nkirui2030/multi-server:$SHA -f  ./server/docker ./server
-docker build -t nkirui2030/multi-worker:latest -f nkirui2030/multi-worker:$SHA -f ./worker/docker ./worker
+docker build -t nkirui2030/multi-client:latest -f nkirui2030/multi-client:$SHA -f  ./client/Dockerfile ./client
+docker build -t nkirui2030/multi-server:latest -f nkirui2030/multi-server:$SHA -f  ./server/Dockerfile ./server
+docker build -t nkirui2030/multi-worker:latest -f nkirui2030/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push nkirui2030/multi-client:latest
 docker push nkirui2030/multi-server:latest
