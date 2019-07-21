@@ -10,11 +10,11 @@ spec:
   rules:
     - http:
         paths:
-          - path: /web
+          - path: /
             backend:
               serviceName: client-cluster-ip-service
               servicePort: 3000
-          - path: /server
+          - path: /api/
             backend:
               serviceName: server-cluster-ip-service
               servicePort: 5000
